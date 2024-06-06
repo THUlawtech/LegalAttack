@@ -95,3 +95,6 @@ then set `--model_type='yourmodel'` in `legalattack/basic_attack.sh`.
 [2] C. Xiao, H. Zhong, Z. Guo, C. Tu, Z. Liu, M. Sun, Y. Feng, X. Han, Z. Hu, H. Wang, and J. Xu. Cail2018: A large-scale legal dataset for judgment prediction, 2018.
 
 [3] K. Zhu, J. Wang, J. Zhou, Z. Wang, H. Chen, Y. Wang, L. Yang, W. Ye, Y. Zhang, N. Z. Gong, and X. Xie. Promptbench: Towards evaluating the robustness of large language models on adversarial prompts, 2023.
+
+## Licence
+MIT License
