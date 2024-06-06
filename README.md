@@ -91,5 +91,7 @@ then set `--model_type='yourmodel'` in `legalattack/basic_attack.sh`.
 
 ## Reference
 [1] F. Yao, C. Xiao, X. Wang, Z. Liu, L. Hou, C. Tu, J. Li, Y. Liu, W. Shen, and M. Sun. LEVEN: A large-scale chinese legal event detection dataset. In Findings of ACL, pages 183–201, 2022. doi: 10.18653/v1/2022.findings-acl.17.
+
 [2] C. Xiao, H. Zhong, Z. Guo, C. Tu, Z. Liu, M. Sun, Y. Feng, X. Han, Z. Hu, H. Wang, and J. Xu. Cail2018: A large-scale legal dataset for judgment prediction, 2018.
+
 [3] K. Zhu, J. Wang, J. Zhou, Z. Wang, H. Chen, Y. Wang, L. Yang, W. Ye, Y. Zhang, N. Z. Gong, and X. Xie. Promptbench: Towards evaluating the robustness of large language models on adversarial prompts, 2023.
