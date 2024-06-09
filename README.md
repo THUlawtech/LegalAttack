@@ -9,9 +9,15 @@ According to the reasoning logic, J&H divides the attack into three levels: majo
 
 A ⇒ B, B ⇒ C ⊢ A ⇒ C
 
+The framework of J\&H can be seen in the following graph:
+
+
+
+
 As recognition that the minor premise varies for each domain, we have specifically annotated the minor premise knowledge attack in the legal field and proposed an attack method called "J&H-legal":
 
 ![attack_methods](image/attack_methods.png "Attack methods and details in different levels of J&H-legal.")
+
 
 
 
