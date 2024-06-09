@@ -11,12 +11,14 @@ A ⇒ B, B ⇒ C ⊢ A ⇒ C
 
 The framework of J\&H can be seen in the following graph:
 
-
+<img src="image/J&H.jpg" width="700px">
 
 
 As recognition that the minor premise varies for each domain, we have specifically annotated the minor premise knowledge attack in the legal field and proposed an attack method called "J&H-legal":
 
-![attack_methods](image/attack_methods.png "Attack methods and details in different levels of J&H-legal.")
+
+<img src="image/attack_methods.png" width="800px">
+
 
 
 
