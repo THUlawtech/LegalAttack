@@ -13,7 +13,7 @@ The framework of J\&H can be seen in the following graph:
 
 <img src="image/J&H.jpg" width="700px">
 
-In our work, to test the robustness of LLMs at the level of logical reasoning, we have conducted knowledge attacks J\&H on the three levels of \textbf{"major premise, minor premise, reasoning conclusion"}. At the major premise level, we perturb the introduced premise by concenating the RAG and the similar crime into the prompt. At the factual level of the minor premise, different domains have different factual judgment frameworks. We have conducted fine-grained annotation \textbf{J\&H-legal} for the legal field. In the conclusion generation stage, we introduced external disturbance to the conclusion. 
+In our work, to test the robustness of LLMs at the level of logical reasoning, we have conducted knowledge attacks J\&H on the three levels of "major premise, minor premise, reasoning conclusion". At the major premise level, we perturb the introduced premise by concenating the RAG and the similar crime into the prompt. At the factual level of the minor premise, different domains have different factual judgment frameworks. We have conducted fine-grained annotation J\&H-legal for the legal field. In the conclusion generation stage, we introduced external disturbance to the conclusion. 
 
 As recognition that the minor premise varies for each domain, we have specifically annotated the minor premise knowledge attack in the legal field and proposed an attack method called "J&H-legal":
 
