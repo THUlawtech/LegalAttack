@@ -51,7 +51,9 @@ If you were unable to successfully install `torch==2.1.2+cu121`, you can replace
 
 ## Dataset
 
-The annotated data can be found in the 'promptbench' directory.
+The annotated data can be found in the 'promptbench/Annotation' directory.
+
+The annotation guideline can be found in the 'promptbench/Annotation-guideline' directory.
 
 We use LEVEN(LEVEN) and CAIL2018(CrimePrediction) as the dataset for the legal judgement prediction.
 
