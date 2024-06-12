@@ -63,6 +63,16 @@ We use LEVEN(LEVEN) and CAIL2018(CrimePrediction) as the dataset for the legal j
 | CAIL2018 | 15806 | 184           | 419        | 39586      |
 | LEVEN    | 3323  | 61            | 529        | 2476       |
 
+The CAIL2018 dataset can be found in 'promptbench/data/CrimePrediction.json'.
+
+The Leven dataset can be found in 'promptbench/data/Leven.json'.
+
+‘promptbench/data/Leven_event.json’ is a collection of criminal law synonyms extracted from the LEVEN corpus.
+
+'promptbench/data/processed_同义词表.json' is a collection of criminal law synonyms annotated by legal experts.
+
+'promptbench/data/few-shot-crime.json' is a collection of typical cases in each type of crime.
+
 ## Usage
 
 ```python
