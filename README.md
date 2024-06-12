@@ -1,7 +1,7 @@
 
 # J\&H: Evaluating the Robustness of Large Language Models under Knowledge-Injection Attacks
 
-The repo is attached with the [paper](image/Formatting_Instructions_For_the_NeurIPS_2024_Track_on_Datasets_and_Benchmarks%20(12).pdf)
+The repo is attached with the [paper.](image/Formatting_Instructions_For_the_NeurIPS_2024_Track_on_Datasets_and_Benchmarks%20(12).pdf)
 
 ## Introduction
 As the scale and capabilities of Large Language Models (LLMs) increase, their applications in knowledge-intensive fields have garnered widespread attention. However, it remains doubtful whether these LLMs make judgments based on domain knowledge for reasoning. 
