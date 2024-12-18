@@ -46,19 +46,19 @@ def parse_args(in_args=None):
         "--fewshot_number",
         type=strtobool,
         default=False,
-        help="Whether give some example.",
+        help="the number of example.",
     )
     arg_parser.add_argument(
         "--rag",
         type=strtobool,
         default=False,
-        help="Whether attack",
+        help="Whether use rag",
     )
     arg_parser.add_argument(
         "--attack",
         type=strtobool,
         default=False,
-        help="Whether attack",
+        help="Whether attack the model",
     )
     arg_parser.add_argument(
         "--attack_type", type=str, default="", help="attack type"
@@ -370,11 +370,10 @@ if __name__ == "__main__":
         model = pb.LLMModel(model=in_argv.model_type, max_new_tokens=200, temperature=0.0001,
                             api_key=os.environ.get("OPENAI_API_KEY"), base_url=os.environ.get("OPENAI_API_BASE"))
     elif in_argv.model_type in ['Azure-gpt35', 'Azure-gpt4']:
-            model = pb.LLMModel(model=in_argv.model_type, max_new_tokens=200, temperature=0.0001,
+        model = pb.LLMModel(model=in_argv.model_type, max_new_tokens=200, temperature=0.0001,
                                 api_key=os.environ.get("OPENAI_API_KEY"), base_url=os.environ.get("OPENAI_API_BASE"), deployment_name=os.environ.get("Deployment_Name"))
-
     else:
-        # - open source
+        # - open source or farui model
         model = pb.LLMModel(model=in_argv.model_type, max_new_tokens=200, temperature=0.0001, device='cuda')
 
     prompt = pb.Prompt([in_argv.prompt + "案情事实： {content} \n答案："])[0]
@@ -388,6 +387,7 @@ if __name__ == "__main__":
     if in_argv.attack:
         model_name += "_" + in_argv.attack_type + in_argv.sentence
 
+    # default output path
     path = f"{dir}/{in_argv.dataset_type}_{model_name}_预测结果.jsonl"
 
     total_replace_list = []

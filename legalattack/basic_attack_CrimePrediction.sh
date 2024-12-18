@@ -1,9 +1,9 @@
 #!/bin/bash
-export OPENAI_API_BASE=
-export OPENAI_API_KEY=
-export Deployment_Name=
-export DASHSCOPE_API_KEY=
-export base_url=
+export OPENAI_API_BASE= # if use openai
+export OPENAI_API_KEY= # if use openai
+export Deployment_Name= # if use Azure API
+export DASHSCOPE_API_KEY= # if use farui
+export base_url= # if use farui
 
 model=""
 dataset="CrimePrediction"
@@ -60,12 +60,14 @@ for item in "行为人之前犯过{}罪。" "这是风雨交加的一天。" "�
       --sentence=$item
 done
 
+# rag：加入对应罪名的法条的结果
 python -u basic_attack.py \
   --model_type=$model \
   --dataset_type=$dataset  \
   --rag=True \
   --attack=False
 
+# 加入相似罪名的法条的结果
 python -u basic_attack.py \
   --model_type=$model \
   --dataset_type=$dataset  \
